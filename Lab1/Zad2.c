@@ -5,7 +5,7 @@
 #include <errno.h>
 
 void error(char *tekst){
-    fprintf(stderr, "B³¹d: %s\n", tekst);
+    fprintf(stderr, "BÂ³Â¹d: %s\n", tekst);
     exit(1);
 }
 int main(int argc, char* argv[]){
@@ -16,10 +16,10 @@ int main(int argc, char* argv[]){
     int Max = 0;
     char Znak;
     if(argc != 2){
-        error("niepoprawna iloœæ argumentow");
+        error("niepoprawna iloÅ“Ã¦ argumentow");
     }
     if((plik = open(argv[1], O_RDONLY)) == -1){
-        error("b³¹d odczytu pliku");
+        error("bÂ³Â¹d odczytu pliku");
     }
     while((Znak = fgetc(plik)) != EOF){
         liczbaznakow++;
@@ -42,7 +42,7 @@ int main(int argc, char* argv[]){
         }
     }
     if((close(plik)) == -1){
-        error("b³¹d zamykania pliku");
+        error("bÂ³Â¹d zamykania pliku");
     }
     return 0;
 }
