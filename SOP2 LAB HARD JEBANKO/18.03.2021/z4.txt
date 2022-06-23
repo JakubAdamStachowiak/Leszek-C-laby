@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <errno.h>
+#include <stdlib.h>
+
+int main(int argc, char* argv[])
+{
+printf("Poczatek\n");
+if (fork()==0){
+    exit(0);
+}
+if (fork()==0){
+    exit(0);
+}
+if (fork()==0){
+    exit(0);
+}
+sleep(30);
+wait(NULL);
+printf("Koniec\n");
+exit(0);
+}
