@@ -1,9 +1,0 @@
-1. Semafor zostanie podniesiony
-2. Semafor zostanie podniesiony ponownie
-3. 3
-4. Semafor podniesie się na obu terminalach, odblokuje pierwszy
-5. Terminale się zablokują
-6. Oba terminale zostały odblokowane
-9. Semafor został w systemie
-15. Stan semafora został zapamiętany
-19. Stan semafora nie został zapamiętany 
