@@ -1,0 +1,11 @@
+1. Program podniesie semafor (operacja odblokuj)
+2. Program powtórzy operacje.
+3. Trzy razy, przy czwartym program nie będzie mógł opuścić semafora i będzie czekał na jego podniesienie.
+4. Pierwszy program odblokuje się, opuszczjąc semafor.
+5. Pierwszy program oczekuje na podniesienie semafora aby móc go opuścić.
+6. Oba terminale zostały odblokowane i pierwszy terminal opuścił semafor.
+9. Semafor pozostał w systemie
+10. Wykasowanie
+12. Program wypisuje komunikat gdy nie można opuścić semafora.
+15. Stan semafora został zapamiętany. 
+19. Stan semafora nie zostaje zapamiętywany.

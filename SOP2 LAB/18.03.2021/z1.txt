@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <errno.h>
+#include <sys/types.h>
+#include <stdlib.h>
+
+int main(int argc, char* argv[])
+{
+if(fork()==0)
+{
+    printf("Proces dziecko 1: %ld\n",(long)getpid());
+    if (fork()==0)
+    {
+        printf("Proces pod-dziecko 1: %ld\n",(long)getpid());
+        
+    }
+    exit(0);
+}
+if(fork()==0)
+{
+    printf("Proces dziecko 2: %ld\n",(long)getpid());
+    if (fork()==0)
+    {
+        printf("Proces pod-dziecko 2: %ld\n",(long)getpid());
+        
+    }
+    exit(0);
+}
+exit(0);
+}
